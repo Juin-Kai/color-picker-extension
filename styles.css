@@ -1,0 +1,115 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#picker {
+  background-color: #3b82f6;
+  color: white;
+}
+
+#picker:hover {
+  background-color: #2563eb;
+}
+
+#copy {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+#copy:hover {
+  background-color: #d1d5db;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.color-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.color-entry:hover {
+  background-color: #f3f4f6;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: default;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: auto;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  color: #ef4444; /* Red on hover */
+  background: none;
+}
+
+#success {
+  color: #10b981;
+  font-size: 12px;
+  text-align: center;
+}
+
+#errors {
+  color: #ef4444;
+  font-size: 12px;
+  text-align: center;
+}
